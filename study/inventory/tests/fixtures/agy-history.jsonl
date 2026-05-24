@@ -1,0 +1,3 @@
+{"display":"first prompt of conv A","timestamp":1779552098791,"workspace":"/tmp/wsA","conversationId":"conv-A"}
+{"display":"second prompt of conv A","timestamp":1779552325465,"workspace":"/tmp/wsA","conversationId":"conv-A"}
+{"display":"first prompt of conv B","timestamp":1780000000000,"workspace":"/tmp/wsB","conversationId":"conv-B"}
