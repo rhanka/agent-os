@@ -1,0 +1,187 @@
+
+=== CLAUDE ===
+Sessions: 231
+Date range: 2026-03-12T19:09:58.089Z to 2026-05-15T02:38:06.820Z
+Total tool calls: 15298
+Total binary invocations (cleaned): 23222
+  Avg 101 bin calls / session
+
+--- Top 15 native tools ---
+     7798   51.0%  Bash
+     2752   18.0%  Read
+     2054   13.4%  Edit
+      577    3.8%  Write
+      569    3.7%  TaskUpdate
+      391    2.6%  TaskCreate
+      218    1.4%  WebFetch
+      189    1.2%  Agent
+      155    1.0%  WebSearch
+      104    0.7%  mcp__playwright__browser_evaluate
+       89    0.6%  ToolSearch
+       75    0.5%  Grep
+       74    0.5%  AskUserQuestion
+       52    0.3%  mcp__playwright__browser_navigate
+       42    0.3%  mcp__playwright__browser_snapshot
+
+--- Top 35 binaries (cleaned) ---
+     2592  11.16%  head
+     2205   9.50%  tail
+     2148   9.25%  grep
+     1747   7.52%  git
+     1530   6.59%  cd [builtin]
+      849   3.66%  ls
+      699   3.01%  make
+      597   2.57%  cat
+      502   2.16%  cargo
+      419   1.80%  gh
+      351   1.51%  npm
+      309   1.33%  wc
+      277   1.19%  docker
+      271   1.17%  find
+      158   0.68%  python3
+      123   0.53%  sleep
+      122   0.53%  corepack
+      121   0.52%  sort
+      111   0.48%  node
+      101   0.43%  npx
+       96   0.41%  rg
+       93   0.40%  curl
+       91   0.39%  bash
+       89   0.38%  awk
+       84   0.36%  mkdir
+       77   0.33%  sed
+       75   0.32%  jq
+       73   0.31%  pgrep
+       70   0.30%  rm
+       58   0.25%  kubectl
+       55   0.24%  claude
+       50   0.22%  d
+       45   0.19%  fn
+       45   0.19%  panicked
+       44   0.19%  cp
+
+=== CODEX ===
+Sessions: 1506
+Date range: 2026-02-07T19:20:38.661Z to 2026-05-15T01:57:24.561Z
+Total tool calls: 253255
+Total binary invocations (cleaned): 360516
+  Avg 239 bin calls / session
+
+--- Top 15 native tools ---
+   187549   74.1%  exec_command
+    52365   20.7%  write_stdin
+     2412    1.0%  update_plan
+     1665    0.7%  spawn_agent
+     1510    0.6%  wait
+     1286    0.5%  send_input
+     1210    0.5%  close_agent
+     1173    0.5%  wait_agent
+      598    0.2%  view_image
+      488    0.2%  browser_snapshot
+      289    0.1%  browser_click
+      287    0.1%  browser_tabs
+      285    0.1%  browser_evaluate
+      275    0.1%  resume_agent
+      183    0.1%  browser_navigate
+
+--- Top 35 binaries (cleaned) ---
+    71084  19.72%  sed
+    41121  11.41%  git
+    27199   7.54%  rg
+    16809   4.66%  make
+     9607   2.66%  nl
+     8718   2.42%  bash
+     6168   1.71%  gh
+     4762   1.32%  cd [builtin]
+     3801   1.05%  npm
+     3218   0.89%  head
+     3172   0.88%  node
+     2925   0.81%  find
+     2707   0.75%  python
+     2592   0.72%  ls
+     2290   0.64%  sort
+     2248   0.62%  cat
+     2181   0.60%  curl
+     2001   0.56%  cargo
+     1539   0.43%  grep
+     1408   0.39%  jq
+     1217   0.34%  awk
+     1187   0.33%  tail
+     1123   0.31%  docker
+     1028   0.29%  wc
+     1009   0.28%  scw
+      802   0.22%  test
+      731   0.20%  ps
+      607   0.17%  Lot
+      553   0.15%  sleep
+      526   0.15%  pwd [builtin]
+      511   0.14%  graphify
+      490   0.14%  date
+      469   0.13%  ssh
+      457   0.13%  corepack
+      456   0.13%  organization_batch_create
+
+
+=== UNION (binaries used by EITHER cli) ===
+  TOTAL  CLAUDE  CODEX  binary
+  -----  ------  -----  ------
+   71161      77  71084  sed
+   42868    1747  41121  git
+   27295      96  27199  rg
+   17508     699  16809  make
+    9607       0   9607  nl
+    8809      91   8718  bash
+    6587     419   6168  gh
+    6292    1530   4762  cd
+    5810    2592   3218  head
+    4152     351   3801  npm
+    3687    2148   1539  grep
+    3441     849   2592  ls
+    3392    2205   1187  tail
+    3283     111   3172  node
+    3196     271   2925  find
+    2845     597   2248  cat
+    2709       2   2707  python
+    2503     502   2001  cargo
+    2411     121   2290  sort
+    2274      93   2181  curl
+    1483      75   1408  jq
+    1400     277   1123  docker
+    1337     309   1028  wc
+    1306      89   1217  awk
+    1014       5   1009  scw
+     836      34    802  test
+     763      32    731  ps
+     676     123    553  sleep
+     617      10    607  Lot
+     579     122    457  corepack
+     562      36    526  pwd
+     540     101    439  npx
+     525      14    511  graphify
+     499       9    490  date
+     469       0    469  ssh
+     456       0    456  organization_batch_create
+     444      22    422  type
+     441       0    441  NODE
+     439      25    414  import
+     435      70    365  rm
+     411       3    408  workflow
+     392       0    392  initiative_list_with_orgs
+     389       6    383  p
+     385      84    301  mkdir
+     331       0    331  executive_summary
+     317       9    308  status
+     309      35    274  codex
+     297       0    297  create_organizations
+     293       0    293  createNewOrgs
+     280       1    279  data
+     279       4    275  length
+     275     158    117  python3
+     268       0    268  chat
+     265      12    253  TODO
+     263      44    219  cp
+     263      23    240  from
+     262       1    261  references
+     260       6    254  -v
+     256      13    243  interface
+     247       0    247  steer
